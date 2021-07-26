@@ -1,4 +1,4 @@
-  import { ButtonHTMLAttributes } from "react"
+import { ButtonHTMLAttributes } from "react"
 import tw from "tailwind-styled-components"
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -6,7 +6,7 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'ghost'  
 }
 
-export const Button = ({ children, variant, ...props }: Props) => {
+export const ButtonAdicionar = ({ children, variant, ...props }: Props) => {
   if(variant === 'ghost') {
     return (
       <GhostButton { ...props } style={{borderRadius: 5}}>
@@ -27,9 +27,9 @@ export const BaseButton = tw.button`
 `
 
 export const MainButton = tw(BaseButton)`
-  bg-purple-500 hover:bg-purple-600
+   bg-green-500 hover:bg-green-700
 `
 
 export const GhostButton = tw(BaseButton)`
-  bg-trasparent hover:bg-purple-200 text-purple-500
+  bg-trasparent hover:bg-green-200 text-green-500
 `

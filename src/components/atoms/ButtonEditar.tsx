@@ -6,7 +6,7 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'ghost'  
 }
 
-export const Button = ({ children, variant, ...props }: Props) => {
+export const ButtonEditar = ({ children, variant, ...props }: Props) => {
   if(variant === 'ghost') {
     return (
       <GhostButton { ...props } style={{borderRadius: 5}}>
@@ -27,9 +27,9 @@ export const BaseButton = tw.button`
 `
 
 export const MainButton = tw(BaseButton)`
-  bg-purple-500 hover:bg-purple-600
+   bg-yellow-500 hover:bg-yellow-600
 `
 
 export const GhostButton = tw(BaseButton)`
-  bg-trasparent hover:bg-purple-200 text-purple-500
+  bg-trasparent hover:bg-yellow-200 text-yellow-500
 `

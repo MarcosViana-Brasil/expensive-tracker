@@ -1,4 +1,4 @@
-import { Register } from "../src/pages/Register"
+import { Register } from "../../src/pages/Register"
 
 
 const index = () => {
