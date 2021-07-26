@@ -1,9 +1,10 @@
 import { TemplateAside } from "../templates/TemplateContainer"
+import Image from 'next/image'
 
 export const Sidebar = () => {
   return (
     <TemplateAside>
-      <img src="/wallet.svg" alt="wallet" />
+      <Image src="/wallet.svg" alt="wallet" width='600' height='600' />
     </TemplateAside>
   )
 }

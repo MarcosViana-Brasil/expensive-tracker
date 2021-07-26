@@ -16,7 +16,7 @@ export const Login = () => {
 
             <InputText type='password' label="Password" placeholder="digite sua senha" />
 
-            <Button>Entarr</Button>
+            <Button>Entrar</Button>
           </TemplateForm>
 
           <Link href="/register">Criar Conta</Link>
